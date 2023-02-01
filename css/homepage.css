@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  background: #f5e4e9;
+  padding-bottom: 200px;
+}
+#logo-pic {
+  display: inline;
+  width: 151px;
+  height: 168px;
+  left: 22px;
+  top: 3px;
+}
+#top-header {
+  display: flex;
+  width: 100%;
+  height: 171px;
+  background: #fed7e3;
+
+}
+.container{
+  background: #fed7e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+nav {
+  background: #fff;
+  border-radius: 50px;
+  padding: 1px;
+  box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 1vw 3vw;
+  margin: 1vw;
+  font-size: 18px;
+  font-weight: 500;
+  color: #777;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s;
+}
+@media (max-width: 620px) {
+  nav ul li {
+    padding: 5px;
+    font-size: 16px;
+
+  }
+  .container{
+    justify-content:space-evenly; 
+    flex: 1;
+  }
+  
+}
+nav ul li::after {
+  content:'';
+  background: #ffafbe;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  opacity: 0;
+  transition: top 0.5s, opacity 0.5s;
+}
+
+nav ul li:hover {
+  color: #ffff;
+}
+a:hover {
+  color: #ffff;
+}
+
+nav ul li:hover::after {
+  top: 50%;
+  opacity: 1;
+}
+
+
+.valentines-day-pic {
+  display: block;
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+

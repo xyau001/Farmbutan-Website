@@ -1,0 +1,27 @@
+.bouquet-container {
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+}
+.bouquet-pic {
+    width: 300px;
+    height: 400px;
+    object-fit:cover;
+}
+.bouquet-pic-div {
+    display: inline-block;
+     width: 300px;
+}
+.bouquet-description {
+    margin-left: 30px;
+    display: inline-block;
+    width: 600px;
+
+
+}
+.bouquet-name {
+    font-size: 50px;
+}
+.bouquet-details {
+    line-height: 2;
+}
