@@ -7,13 +7,14 @@
   width: 100%;
   height: 800px;
   position: absolute;
+  z-index: 5;
   background-color: #f5e4e9;
 }
 
 form {
   max-width: 550px;
   width: 90%;
-  background: white;
+  background: rgb(255, 255, 255);
   margin: 17vh auto 0 auto;
   padding: 40px;
   border-radius: 3px;
