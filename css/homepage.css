@@ -14,6 +14,12 @@ body {
   left: 22px;
   top: 3px;
 }
+#instagram-logo {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 #top-header {
   display: flexbox;
   width: 100%;
@@ -21,6 +27,7 @@ body {
   position: sticky;
   top: 0;
   background: #f8edec;
+  z-index: 100;
 }
 .container {
   background: #ffffff;
@@ -32,7 +39,6 @@ body {
 
 nav {
   background: #fff;
-  padding: 1px;
 }
 ul {
   padding: 0;
@@ -93,9 +99,10 @@ nav ul li:hover::after {
   transition: all 0.3s ease-out;
   visibility: hidden;
   opacity: 0;
+  margin-top: -12px;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -111,11 +118,7 @@ nav ul li:hover::after {
   display: block;
 }
 
-a {
-  position: relative;
-  display: inline-block;
-}
-.dropdown:hover .dropdown-content {
+.navbutton:hover .dropdown-content {
   visibility: visible;
   opacity: 1;
 }
